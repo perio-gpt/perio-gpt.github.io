@@ -40,6 +40,41 @@
             display: flex;
             align-items: center;
         }
+        
+        .language-toggle {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        
+        .lang-btn {
+            padding: 6px 12px;
+            border: 1px solid #0066cc;
+            background: transparent;
+            color: #0066cc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .lang-btn.active {
+            background: #0066cc;
+            color: white;
+        }
+        
+        .lang-btn:hover {
+            background: #0066cc;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+        }
+        
+        .hidden-lang {
+            display: none;
+        }
     </style>
 </head>
 
@@ -48,8 +83,8 @@
     <div class="it-header-wrapper">
         <div class="it-header-center-wrapper">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
+                <div class="row align-items-center">
+                    <div class="col-9">
                         <div class="it-header-center-content-wrapper">
                             <div class="it-brand-wrapper">
                                 <a href="#">
@@ -64,6 +99,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-3 text-end">
+                        <div class="language-toggle">
+                            <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
+                            <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,9 +115,9 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="it-hero-text-wrapper bg-dark p-5">
-                        <span class="it-category">Innovazione Medica</span>
-                        <h1 class="no_toc text-white">L'Intelligenza Artificiale al servizio della Parodontologia</h1>
-                        <p class="d-none d-lg-block text-white-75">Diagnosi, analisi predittiva e supporto decisionale avanzato.</p>
+                        <span class="it-category lang-cat">Innovazione Medica</span>
+                        <h1 class="no_toc text-white lang-h1">L'Intelligenza Artificiale al servizio della Parodontologia</h1>
+                        <p class="d-none d-lg-block text-white-75 lang-p1">Diagnosi, analisi predittiva e supporto decisionale avanzato.</p>
                     </div>
                 </div>
             </div>
@@ -87,15 +128,15 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
-                    <h2 class="mb-4 text-primary">Che cos'è</h2>
-                    <p class="lead">
+                    <h2 class="mb-4 text-primary lang-h2">Che cos'è</h2>
+                    <p class="lead lang-p2">
                         Il progetto <strong>PerioGPT</strong> punta a realizzare la prima piattaforma di intelligenza artificiale dedicata alla parodontologia.
                     </p>
-                    <p>
+                    <p class="lang-p3">
                         Il sistema integra un <strong>chatbot clinico validato</strong> e moduli di <strong>visione artificiale</strong> per l'analisi radiografica, la compilazione automatica della cartella parodontale e il supporto predittivo nelle decisioni
                         cliniche.
                     </p>
-                    <p class="mt-3 text-muted">
+                    <p class="mt-3 text-muted lang-p4">
                         <small>Il progetto ha recentemente ottenuto il 4° posto, confermando il valore dell'innovazione tecnologica in ambito clinico.</small>
                     </p>
                 </div>
@@ -107,8 +148,8 @@
         <div class="container">
             <div class="row mb-5 text-center">
                 <div class="col-12">
-                    <h2 class="text-primary">Background Scientifico</h2>
-                    <p>Consulta le pubblicazioni ufficiali su PubMed per approfondire le basi scientifiche del sistema.</p>
+                    <h2 class="text-primary lang-h3">Background Scientifico</h2>
+                    <p class="lang-p5">Consulta le pubblicazioni ufficiali su PubMed per approfondire le basi scientifiche del sistema.</p>
                 </div>
             </div>
 
@@ -118,16 +159,16 @@
                         <div class="card card-bg card-big no-after">
                             <div class="card-body">
                                 <div class="category-top">
-                                    <span class="category">J. Clin. Med. 2025</span>
+                                    <span class="category lang-cat2">J. Clin. Med. 2025</span>
                                 </div>
-                                <h5 class="card-title">AI per la Diagnosi dell'Osteoporosi</h5>
-                                <p class="card-text">
+                                <h5 class="card-title lang-h4">AI per la Diagnosi dell'Osteoporosi</h5>
+                                <p class="card-text lang-p6">
                                     <em>Development of AI-Based Predictive Models for Osteoporosis Diagnosis in Postmenopausal Women from Panoramic Radiographs.</em><br> Un'analisi approfondita sull'uso di radiomica e deep learning per lo screening opportunistico.
                                 </p>
                                 <div class="it-card-footer">
                                     <a href="https://pubmed.ncbi.nlm.nih.gov/40648835/" class="btn btn-primary btn-icon" target="_blank">
                                         <i class="fas fa-file"></i>
-                                        <span>&nbsp; Leggi su PubMed</span>
+                                        <span class="lang-btn-text">&nbsp; Leggi su PubMed</span>
                                     </a>
                                 </div>
                             </div>
@@ -140,16 +181,16 @@
                         <div class="card card-bg card-big no-after">
                             <div class="card-body">
                                 <div class="category-top">
-                                    <span class="category">J. Clin. Periodontology</span>
+                                    <span class="category lang-cat3">J. Clin. Periodontology</span>
                                 </div>
-                                <h5 class="card-title">Il Modello Perio-GPT</h5>
-                                <p class="card-text">
+                                <h5 class="card-title lang-h5">Il Modello Perio-GPT</h5>
+                                <p class="card-text lang-p7">
                                     <em>Development and Comparative Evaluation of a Reinstructed GPT-4o Model Specialized in Periodontology.</em><br> Dettagli tecnici sul sistema RAG, la validazione clinica e le performance del modello specializzato.
                                 </p>
                                 <div class="it-card-footer">
                                     <a href="https://pubmed.ncbi.nlm.nih.gov/39723544/" class="btn btn-primary btn-icon" target="_blank">
                                         <i class="fas fa-file"></i>
-                                        <span>&nbsp; Leggi su PubMed</span>
+                                        <span class="lang-btn-text">&nbsp; Leggi su PubMed</span>
                                     </a>
                                 </div>
                             </div>
@@ -165,7 +206,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center py-3">
-                        <small>&copy; 2025 Perio-GPT Project. Tutti i diritti riservati.</small>
+                        <small class="lang-footer">&copy; 2025 Perio-GPT Project. Tutti i diritti riservati.</small>
                     </div>
                 </div>
             </div>
@@ -173,6 +214,72 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.9.0/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        const translations = {
+            it: {
+                'lang-cat': 'Innovazione Medica',
+                'lang-h1': 'L\'Intelligenza Artificiale al servizio della Parodontologia',
+                'lang-p1': 'Diagnosi, analisi predittiva e supporto decisionale avanzato.',
+                'lang-h2': 'Che cos\'è',
+                'lang-p2': 'Il progetto <strong>PerioGPT</strong> punta a realizzare la prima piattaforma di intelligenza artificiale dedicata alla parodontologia.',
+                'lang-p3': 'Il sistema integra un <strong>chatbot clinico validato</strong> e moduli di <strong>visione artificiale</strong> per l\'analisi radiografica, la compilazione automatica della cartella parodontale e il supporto predittivo nelle decisioni cliniche.',
+                'lang-p4': '<small>Il progetto ha recentemente ottenuto il 4° posto, confermando il valore dell\'innovazione tecnologica in ambito clinico.</small>',
+                'lang-h3': 'Background Scientifico',
+                'lang-p5': 'Consulta le pubblicazioni ufficiali su PubMed per approfondire le basi scientifiche del sistema.',
+                'lang-cat2': 'J. Clin. Med. 2025',
+                'lang-h4': 'AI per la Diagnosi dell\'Osteoporosi',
+                'lang-p6': '<em>Development of AI-Based Predictive Models for Osteoporosis Diagnosis in Postmenopausal Women from Panoramic Radiographs.</em><br> Un\'analisi approfondita sull\'uso di radiomica e deep learning per lo screening opportunistico.',
+                'lang-cat3': 'J. Clin. Periodontology',
+                'lang-h5': 'Il Modello Perio-GPT',
+                'lang-p7': '<em>Development and Comparative Evaluation of a Reinstructed GPT-4o Model Specialized in Periodontology.</em><br> Dettagli tecnici sul sistema RAG, la validazione clinica e le performance del modello specializzato.',
+                'lang-btn-text': '&nbsp; Leggi su PubMed',
+                'lang-footer': '&copy; 2025 Perio-GPT Project. Tutti i diritti riservati.'
+            },
+            en: {
+                'lang-cat': 'Medical Innovation',
+                'lang-h1': 'Artificial Intelligence at the service of Periodontology',
+                'lang-p1': 'Diagnosis, predictive analysis and advanced decision support.',
+                'lang-h2': 'What is it',
+                'lang-p2': 'The <strong>PerioGPT</strong> project aims to create the first artificial intelligence platform dedicated to periodontology.',
+                'lang-p3': 'The system integrates a <strong>validated clinical chatbot</strong> and <strong>artificial vision</strong> modules for radiographic analysis, automatic periodontal chart compilation, and predictive support in clinical decisions.',
+                'lang-p4': '<small>The project recently achieved 4th place, confirming the value of technological innovation in the clinical field.</small>',
+                'lang-h3': 'Scientific Background',
+                'lang-p5': 'Consult official publications on PubMed to deepen the scientific basis of the system.',
+                'lang-cat2': 'J. Clin. Med. 2025',
+                'lang-h4': 'AI for Osteoporosis Diagnosis',
+                'lang-p6': '<em>Development of AI-Based Predictive Models for Osteoporosis Diagnosis in Postmenopausal Women from Panoramic Radiographs.</em><br> An in-depth analysis on the use of radiomics and deep learning for opportunistic screening.',
+                'lang-cat3': 'J. Clin. Periodontology',
+                'lang-h5': 'The Perio-GPT Model',
+                'lang-p7': '<em>Development and Comparative Evaluation of a Reinstructed GPT-4o Model Specialized in Periodontology.</em><br> Technical details on the RAG system, clinical validation and model performance.',
+                'lang-btn-text': '&nbsp; Read on PubMed',
+                'lang-footer': '&copy; 2025 Perio-GPT Project. All rights reserved.'
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem('language', lang);
+
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update content
+            Object.keys(translations[lang]).forEach(key => {
+                const elements = document.querySelectorAll(`.${key}`);
+                elements.forEach(el => {
+                    el.innerHTML = translations[lang][key];
+                });
+            });
+        }
+
+        // Load saved language on page load
+        window.addEventListener('load', () => {
+            const savedLang = localStorage.getItem('language') || 'it';
+            const btn = document.querySelector(`.lang-btn[onclick="setLanguage('${savedLang}')"]`);
+            if (btn) btn.click();
+        });
+    </script>
 </body>
 
 </html>
