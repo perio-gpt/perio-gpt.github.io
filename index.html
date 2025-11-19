@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="logo.png">
 
     <style>
+        /* --- HERO SECTION --- */
         .it-hero-wrapper {
             min-height: 450px;
             background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
@@ -28,6 +29,7 @@
             padding: 80px 0;
         }
         
+        /* --- BRAND & LOGO --- */
         .it-brand-logo {
             width: 50px;
             height: 50px;
@@ -41,32 +43,40 @@
             align-items: center;
         }
         
+        /* --- LANGUAGE TOGGLE (MODIFICATO) --- */
         .language-toggle {
             display: flex;
             gap: 8px;
             align-items: center;
+            /* Allinea i bottoni a destra */
+            justify-content: flex-end; 
         }
         
         .lang-btn {
             padding: 6px 12px;
             border: 1px solid #0066cc;
-            background: transparent;
+            /* MODIFICA: Sfondo bianco invece che trasparente per visibilità */
+            background-color: #fff; 
             color: #0066cc;
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
+            font-weight: bold; /* Testo un po' più marcato */
             transition: all 0.3s ease;
             position: relative;
             z-index: 10;
         }
         
+        /* Stato Attivo (Il bottone della lingua corrente) */
         .lang-btn.active {
-            background: #0066cc;
+            background-color: #0066cc;
             color: white;
+            border-color: #0066cc;
         }
         
+        /* Hover Effect */
         .lang-btn:hover {
-            background: #0066cc;
+            background-color: #0055aa; /* Un blu leggermente più scuro */
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
@@ -89,7 +99,7 @@
                             <div class="it-brand-wrapper">
                                 <a href="#">
                                     <div class="it-brand-text">
-                                        <img src="logo.png" alt="Perio-GPT" class="it-brand-logo">
+                                        <img src="logo.png" alt="Perio-GPT" class="it-brand-logo" onerror="this.style.display='none'">
                                         <div>
                                             <div class="it-brand-title">Perio-GPT</div>
                                             <div class="it-brand-tagline">Artificial Intelligence in Periodontology</div>
@@ -99,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 text-end">
+                    <div class="col-3">
                         <div class="language-toggle">
                             <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
                             <button class="lang-btn" onclick="setLanguage('en')">EN</button>
@@ -262,7 +272,9 @@
 
             // Update button states
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+            // Trova il bottone che ha scatenato l'evento o quello con l'onclick corrispondente
+            const targetBtn = document.querySelector(`.lang-btn[onclick="setLanguage('${lang}')"]`);
+            if(targetBtn) targetBtn.classList.add('active');
 
             // Update content
             Object.keys(translations[lang]).forEach(key => {
@@ -276,8 +288,8 @@
         // Load saved language on page load
         window.addEventListener('load', () => {
             const savedLang = localStorage.getItem('language') || 'it';
-            const btn = document.querySelector(`.lang-btn[onclick="setLanguage('${savedLang}')"]`);
-            if (btn) btn.click();
+            // Chiama la funzione per settare testi e classi attive
+            setLanguage(savedLang);
         });
     </script>
 </body>
