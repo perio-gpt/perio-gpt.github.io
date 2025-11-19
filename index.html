@@ -43,47 +43,57 @@
             align-items: center;
         }
         
-        /* --- LANGUAGE TOGGLE (MODIFICATO) --- */
+        /* --- HEADER CUSTOMIZATION --- */
+        /* Forziamo lo sfondo blu nell'header per far risaltare i bottoni bianchi */
+        .it-header-wrapper {
+            background-color: #0066cc;
+            color: white;
+        }
+        /* Assicuriamo che i testi nel brand siano bianchi su sfondo blu */
+        .it-brand-title, .it-brand-tagline {
+            color: white !important;
+        }
+        
+        /* LANGUAGE TOGGLE  */
         .language-toggle {
             display: flex;
             gap: 8px;
             align-items: center;
-            /* Allinea i bottoni a destra */
             justify-content: flex-end; 
         }
         
         .lang-btn {
             padding: 6px 12px;
-            border: 1px solid #0066cc;
-            /* MODIFICA: Sfondo bianco invece che trasparente per visibilità */
-            background-color: #fff; 
-            color: #0066cc;
+            /* STATO INATTIVO: Sfondo trasparente (blu), testo bianco, bordo bianco */
+            background-color: transparent; 
+            color: #fff;
+            border: 1px solid #fff;
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
-            font-weight: bold; /* Testo un po' più marcato */
+            font-weight: bold;
             transition: all 0.3s ease;
             position: relative;
             z-index: 10;
         }
         
-        /* Stato Attivo (Il bottone della lingua corrente) */
+        /* STATO ATTIVO: Sfondo BIANCO, testo BLU */
         .lang-btn.active {
-            background-color: #0066cc;
-            color: white;
-            border-color: #0066cc;
+            background-color: #fff;
+            color: #0066cc;
+            border-color: #fff;
         }
         
         /* Hover Effect */
         .lang-btn:hover {
-            background-color: #0055aa; /* Un blu leggermente più scuro */
+            background-color: rgba(255, 255, 255, 0.2); /* Leggero bianco in trasparenza */
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
         }
-        
-        .hidden-lang {
-            display: none;
+        /* Hover su bottone già attivo */
+        .lang-btn.active:hover {
+            background-color: #f0f0f0;
+            color: #0066cc;
         }
     </style>
 </head>
@@ -111,8 +121,8 @@
                     </div>
                     <div class="col-3">
                         <div class="language-toggle">
-                            <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
-                            <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                            <button id="btn-it" class="lang-btn active" onclick="setLanguage('it')">IT</button>
+                            <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
                         </div>
                     </div>
                 </div>
@@ -143,8 +153,7 @@
                         Il progetto <strong>PerioGPT</strong> punta a realizzare la prima piattaforma di intelligenza artificiale dedicata alla parodontologia.
                     </p>
                     <p class="lang-p3">
-                        Il sistema integra un <strong>chatbot clinico validato</strong> e moduli di <strong>visione artificiale</strong> per l'analisi radiografica, la compilazione automatica della cartella parodontale e il supporto predittivo nelle decisioni
-                        cliniche.
+                        Il sistema integra un <strong>chatbot clinico validato</strong> e moduli di <strong>visione artificiale</strong> per l'analisi radiografica, la compilazione automatica della cartella parodontale e il supporto predittivo nelle decisioni cliniche.
                     </p>
                     <p class="mt-3 text-muted lang-p4">
                         <small>Il progetto ha recentemente ottenuto il 4° posto, confermando il valore dell'innovazione tecnologica in ambito clinico.</small>
@@ -270,13 +279,17 @@
             document.documentElement.lang = lang;
             localStorage.setItem('language', lang);
 
-            // Update button states
+            // 1. Reset: Rimuovi la classe 'active' da TUTTI i bottoni
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            // Trova il bottone che ha scatenato l'evento o quello con l'onclick corrispondente
-            const targetBtn = document.querySelector(`.lang-btn[onclick="setLanguage('${lang}')"]`);
-            if(targetBtn) targetBtn.classList.add('active');
 
-            // Update content
+            // 2. Attiva il bottone corretto (Aggiunge la classe 'active' che lo rende BIANCO)
+            if (lang === 'it') {
+                document.getElementById('btn-it').classList.add('active');
+            } else if (lang === 'en') {
+                document.getElementById('btn-en').classList.add('active');
+            }
+
+            // 3. Aggiorna i testi
             Object.keys(translations[lang]).forEach(key => {
                 const elements = document.querySelectorAll(`.${key}`);
                 elements.forEach(el => {
@@ -285,10 +298,9 @@
             });
         }
 
-        // Load saved language on page load
+        // Carica la lingua salvata al caricamento della pagina
         window.addEventListener('load', () => {
             const savedLang = localStorage.getItem('language') || 'it';
-            // Chiama la funzione per settare testi e classi attive
             setLanguage(savedLang);
         });
     </script>
