@@ -48,15 +48,15 @@ const translations = {
 
         // === INTEGRAZIONE ===
         'lang-integration-title': 'Moduli Aggiuntivi e Estensioni Future',
-        'lang-integration-desc': 'Oltre ai tre moduli principali, PerioGPT integra modelli di radiodiagnostica AI validati per diagnosi precoce di osteoporosi, screening peri-implantite e valutazione perdita ossea marginale precoce. Questi moduli trasformano ogni studio in un centro digitale completo per lo screening di patologie orali e sistemiche, mantenendo sempre la responsabilità diagnostica in capo al clinico.',
+        'lang-integration-desc': 'Oltre ai tre moduli principali, PerioGPT integra modelli di radiodiagnostica AI validati per <b>diagnosi precoce di osteoporosi</b>, <b>screening peri-implantite</b> e <b>valutazione perdita ossea marginale precoce</b>. Questi moduli trasformano ogni studio in un centro digitale completo per lo screening di patologie orali e sistemiche, mantenendo sempre la responsabilità diagnostica in capo al clinico.',
 
         // === FONDAMENTI TECNOLOGICI ===
         'lang-h-tech': 'Fondamenti Tecnologici',
-        'lang-tech-1': 'Architettura Cloud',
+        'lang-tech-1': '<i class="fas fa-network-wired" style="color: #0066cc; margin-right: 8px;"></i> Architettura Cloud',
         'lang-tech-1-desc': 'Framework modulare basata su PyTorch, TensorFlow e FastAPI con pipeline proprietaria per scalabilità e sicurezza.',
-        'lang-tech-2': 'Interoperabilità',
+        'lang-tech-2': '<i class="fas fa-lock" style="color: #0066cc; margin-right: 8px;"></i> Interoperabilità',
         'lang-tech-2-desc': 'Integrazione perfetta con software gestionali odontoiatrici già in uso, mantenendo forte differenziazione tecnologica.',
-        'lang-tech-3': 'Conformità Normativa',
+        'lang-tech-3': '<i class="fas fa-certificate" style="color: #0066cc; margin-right: 8px;"></i> Conformità Normativa',
         'lang-tech-3-desc': 'SaMD (Software as Medical Device) conforme a MDR 2017/745 e AI Act europeo, con marcatura CE programmata.',
 
         'lang-feature-ai': 'IA Specializzata',
@@ -175,15 +175,15 @@ const translations = {
 
         // === INTEGRATION ===
         'lang-integration-title': 'Additional Modules and Future Extensions',
-        'lang-integration-desc': 'Beyond the three main modules, PerioGPT integrates validated AI radiodiagnostic models for early osteoporosis diagnosis, peri-implantitis screening and early marginal bone loss assessment. These modules transform every dental office into a complete digital screening center for oral and systemic pathologies, while maintaining diagnostic responsibility with the clinician.',
+        'lang-integration-desc': 'Beyond the three main modules, PerioGPT integrates validated AI radiodiagnostic models for <b>early osteoporosis diagnosis</b>, <b>peri-implantitis screening</b> and <b>early marginal bone loss assessment</b>. These modules transform every dental office into a complete digital screening center for oral and systemic pathologies, while maintaining diagnostic responsibility with the clinician.',
 
         // === TECHNOLOGICAL FOUNDATIONS ===
         'lang-h-tech': 'Technological Foundations',
-        'lang-tech-1': 'Cloud Architecture',
+        'lang-tech-1': '<i class="fas fa-network-wired" style="color: #0066cc; margin-right: 8px;"></i> Cloud Architecture',
         'lang-tech-1-desc': 'Modular framework based on PyTorch, TensorFlow and FastAPI with proprietary pipeline for scalability and security.',
-        'lang-tech-2': 'Interoperability',
+        'lang-tech-2': '<i class="fas fa-lock" style="color: #0066cc; margin-right: 8px;"></i> Interoperability',
         'lang-tech-2-desc': 'Perfect integration with dental management software already in use, maintaining strong technological differentiation.',
-        'lang-tech-3': 'Regulatory Compliance',
+        'lang-tech-3': '<i class="fas fa-certificate" style="color: #0066cc; margin-right: 8px;"></i> Regulatory Compliance',
         'lang-tech-3-desc': 'SaMD (Software as Medical Device) compliant with MDR 2017/745 and European AI Act, with CE marking planned.',
 
         'lang-feature-ai': 'Specialized AI',
