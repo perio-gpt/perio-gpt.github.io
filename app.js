@@ -60,14 +60,8 @@ const translations = {
         // RICERCA
         'lang-h-research': 'Ricerca e Pubblicazioni',
         'lang-p-research': 'La nostra ricerca è pubblicata sulle principali riviste internazionali di parodontologia e medical imaging, consolidando la base scientifica del nostro approccio.',
-        'lang-cat-research1': 'J. Clin. Med. 2025',
-        'lang-research-title1': 'AI per la Diagnosi dell\'Osteoporosi',
-        'lang-research-desc1': '<em>Development of AI-Based Predictive Models for Osteoporosis Diagnosis in Postmenopausal Women from Panoramic Radiographs.</em><br>Uno studio approfondito sull\'uso di radiomica e deep learning per lo screening opportunistico nelle donne in postmenopausa.',
-        'lang-btn-read': 'Leggi su PubMed',
-        'lang-cat-research2': 'J. Clin. Periodontology 2024',
-        'lang-research-title2': 'Il Modello Perio-GPT',
-        'lang-research-desc2': '<em>Development and Comparative Evaluation of a Reinstructed GPT-4o Model Specialized in Periodontology.</em><br>Dettagli tecnici sul sistema RAG, la validazione clinica e le performance del modello specializzato.',
-
+        'lang-btn-read': 'Leggi Paper',
+ 
         // BACKGROUND SCIENTIFICO
         'lang-h-background': 'Background Scientifico',
         'lang-p-background': 'La nostra tecnologia si basa su tecniche avanzate di intelligenza artificiale e metodologie evidence-based consolidate.',
@@ -157,13 +151,7 @@ const translations = {
         // RESEARCH
         'lang-h-research': 'Research and Publications',
         'lang-p-research': 'Our research is published in major international journals of periodontology and medical imaging, consolidating the scientific basis of our approach.',
-        'lang-cat-research1': 'J. Clin. Med. 2025',
-        'lang-research-title1': 'AI for Osteoporosis Diagnosis',
-        'lang-research-desc1': '<em>Development of AI-Based Predictive Models for Osteoporosis Diagnosis in Postmenopausal Women from Panoramic Radiographs.</em><br>An in-depth study on the use of radiomics and deep learning for opportunistic screening in postmenopausal women.',
-        'lang-btn-read': 'Read on PubMed',
-        'lang-cat-research2': 'J. Clin. Periodontology 2024',
-        'lang-research-title2': 'The Perio-GPT Model',
-        'lang-research-desc2': '<em>Development and Comparative Evaluation of a Reinstructed GPT-4o Model Specialized in Periodontology.</em><br>Technical details on the RAG system, clinical validation, and performance of the specialized model.',
+        'lang-btn-read': 'Read Paper',
 
         // SCIENTIFIC BACKGROUND
         'lang-h-background': 'Scientific Background',
