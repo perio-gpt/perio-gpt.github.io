@@ -1,0 +1,429 @@
+/* ===== PERIO-GPT CUSTOM STYLES ===== */
+
+
+/* --- GLOBAL & UTILS --- */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* --- HEADER SECTION --- */
+
+.it-header-wrapper {
+    background-color: #0066cc;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* NAV FIX: Flexbox per allineamento verticale perfetto */
+
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    align-items: center !important;
+    flex-wrap: nowrap;
+    /* Evita che gli elementi vadano a capo */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.it-brand-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.it-brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+
+/* LANGUAGE TOGGLE */
+
+.language-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    align-self: center;
+    /* Forza centro verticale */
+    margin: 0;
+    line-height: 1;
+}
+
+.language-toggle button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.language-toggle button:hover,
+.language-toggle button.active {
+    background-color: white;
+    color: #0066cc;
+}
+
+
+/* HAMBURGER MENU */
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 4px 8px;
+    align-self: center;
+}
+
+
+/* --- HERO SECTION --- */
+
+.it-hero-wrapper {
+    /* FIX: Calcola altezza 100% viewport meno l'header (circa 80px) */
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
+    /* Flexbox Centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.it-hero-wrapper>.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.it-hero-text-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.section-content {
+    padding: 80px 0;
+}
+
+
+/* --- CARDS & UTILS --- */
+
+.card-wrapper {
+    margin-bottom: 20px;
+}
+
+.card-bg {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0066cc;
+    transition: all 0.3s ease;
+}
+
+.card-bg:hover {
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-big {
+    min-height: 220px;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+
+/* Team photos (uniform size) */
+
+.team-photo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid rgba(0, 102, 204, 0.12);
+    background-color: #fff;
+}
+
+.card-title {
+    color: #0066cc;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.category {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.category-top {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.btn-primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* --- TYPOGRAPHY --- */
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #0066cc;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #0066cc;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.text-primary {
+    color: #0066cc !important;
+}
+
+
+/* --- BACKGROUNDS --- */
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+
+/* --- AWARDS SECTION --- */
+
+.award-icon {
+    font-size: 3rem;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+
+/* --- FOOTER CUSTOMIZATION --- */
+
+footer {
+    background-color: #0066cc;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    max-height: 80px;
+    max-width: 200px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    /* Loghi bianchi */
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+}
+
+.footer-contacts-list li {
+    margin-bottom: 8px;
+}
+
+.footer-contacts-list a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.footer-contacts-list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* --- ANIMATIONS --- */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.no-after::after {
+    display: none !important;
+}
+
+.it-card-footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+
+/* --- MEDIA QUERIES (RESPONSIVE) --- */
+
+
+/* DESKTOP (>= 992px) */
+
+@media (min-width: 992px) {
+    .language-toggle {
+        order: 3;
+        /* La lingua va per ultima */
+        margin-left: 20px;
+    }
+    .navbar-collapse {
+        order: 2;
+        /* Il menu sta in mezzo */
+    }
+    .navbar-brand {
+        order: 1;
+        /* Il logo sta a sinistra */
+    }
+}
+
+
+/* MOBILE (< 992px) */
+
+@media (max-width: 991px) {
+    /* Menu a tendina mobile */
+    .navbar-collapse {
+        background: #005bb5;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        position: absolute;
+        /* Per non spingere giù la hero */
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    /* Posizionamento Lingua Mobile */
+    .language-toggle {
+        margin-left: auto;
+        /* Spinge a destra */
+        margin-right: 15px;
+        /* Spazio dall'hamburger */
+        position: relative;
+        top: -1px;
+        /* Compensazione ottica */
+    }
+    /* Hero adattiva */
+    .hero-logo {
+        width: 160px;
+        height: 160px;
+    }
+    .it-hero-wrapper {
+        min-height: auto;
+        padding: 60px 0;
+    }
+}
