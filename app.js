@@ -21,6 +21,10 @@ const translations = {
         'lang-hero-cta': 'Scopri di più',
 
         // CHE COS'E'
+        // === CHE COS'È PERIO-GPT ===
+        'lang-h-what': 'Che cos\'è Perio-GPT?',
+        'lang-p-what': '<b>PerioGPT</b> è una piattaforma integrata di intelligenza artificiale specializzata in parodontologia e implantologia. Combina <b>tre moduli sinergici</b> che operano in modo coordinato per fornire diagnosi più rapide, complete e standardizzate, riducendo la variabilità clinica e migliorando l\'efficienza della pratica odontoiatrica.',
+
         // === MODULO 1: RADIODIAGNOSTICA ===
         'lang-module-1-title': 'Diagnosi Radiografica',
         'lang-module-1-desc': 'Moduli di AI basati su CNN e Vision Transformers (ViT) addestrati su ortopantomografie etichettate da esperti parodontologi. Identifica automaticamente i segni radiografici della parodontite e stima lo stadio della malattia secondo criteri clinici validati. Strumento di screening automatizzato per assistere il clinico nella valutazione iniziale.',
@@ -144,6 +148,10 @@ const translations = {
         'lang-hero-cta': 'Learn More',
 
         // WHAT IS IT
+        // === WHAT IS PERIO-GPT ===
+        'lang-h-what': 'What is Perio-GPT?',
+        'lang-p-what': '<b>PerioGPT</b> is an integrated artificial intelligence platform specialized in periodontology and implant dentistry. It combines <b>three synergistic modules</b> that work in a coordinated manner to provide faster, more complete and standardized diagnoses, reducing clinical variability and improving practice efficiency.',
+
         // === MODULE 1: RADIODIAGNOSTICS ===
         'lang-module-1-title': 'AI Radiodiagnostics',
         'lang-module-1-desc': 'AI modules based on CNN and Vision Transformers (ViT) trained on panoramic radiographs labeled by expert periodontologists. Automatically identifies radiographic signs of periodontitis and estimates disease stage according to validated clinical criteria. Automated screening tool to assist clinicians in initial patient assessment.',
