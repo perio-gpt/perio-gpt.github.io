@@ -8,13 +8,12 @@ const currentYear = new Date().getFullYear();
 const translations = {
     it: {
         // NAVBAR
-        'lang-nav-what': 'Che Cos\'è', // Nota: ho aggiunto questa chiave che mancava nell'html precedente per coerenza
+        'lang-nav-what': 'Che Cos\'è', 
         'lang-nav-mission': 'Mission',
         'lang-nav-about': 'Chi Siamo',
         'lang-nav-awards': 'Premi',
         'lang-nav-research': 'Ricerca',
         'lang-nav-collab': 'Collaborazioni',
-        'lang-nav-contact': 'Contatti',
 
         // HERO SECTION
         'lang-hero-title': 'Perio-GPT: Intelligenza Artificiale in Parodontologia',
@@ -92,9 +91,6 @@ const translations = {
         'lang-collab-umich-location': 'Ann Arbor, USA',
 
         // CONTATTI & FOOTER
-        'lang-h-contact': 'Contattaci',
-        'lang-p-contact': 'Hai domande o sei interessato a collaborazioni? Contattaci per maggiori informazioni.',
-        'lang-btn-contact': 'Invia Email',
         'lang-footer-about': 'Chi Siamo',
         'lang-footer-about-desc': 'Perio-GPT è un progetto innovativo che combina la parodontologia clinica con l\'intelligenza artificiale avanzata.',
         'lang-footer-links': 'Link Utili',
@@ -102,7 +98,7 @@ const translations = {
         'lang-footer-link-about': 'Chi Siamo',
         'lang-footer-link-research': 'Ricerca',
         'lang-footer-link-collab': 'Collaborazioni',
-        'lang-footer-contact': 'Contatti',
+
 
         // COPYRIGHT DINAMICO
         'lang-footer-copyright': `© ${currentYear} Perio-GPT. Tutti i diritti riservati.`
@@ -115,7 +111,6 @@ const translations = {
         'lang-nav-awards': 'Awards',
         'lang-nav-research': 'Research',
         'lang-nav-collab': 'Collaborations',
-        'lang-nav-contact': 'Contact',
 
         // HERO SECTION
         'lang-hero-title': 'Perio-GPT: Artificial Intelligence in Periodontology',
@@ -193,9 +188,6 @@ const translations = {
         'lang-collab-umich-location': 'Ann Arbor, USA',
 
         // CONTACTS & FOOTER
-        'lang-h-contact': 'Contact Us',
-        'lang-p-contact': 'Have questions or interested in collaborations? Contact us for more information.',
-        'lang-btn-contact': 'Send Email',
         'lang-footer-about': 'About Us',
         'lang-footer-about-desc': 'Perio-GPT is an innovative project combining clinical periodontology with advanced artificial intelligence.',
         'lang-footer-links': 'Useful Links',
