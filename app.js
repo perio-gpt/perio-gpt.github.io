@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 const translations = {
     it: {
         // NAVBAR
-        'lang-nav-what': 'Che Cos\'è', 
+        'lang-nav-what': 'Che Cos\'è',
         'lang-nav-mission': 'Mission',
         'lang-nav-about': 'Chi Siamo',
         'lang-nav-awards': 'Premi',
@@ -21,8 +21,40 @@ const translations = {
         'lang-hero-cta': 'Scopri di più',
 
         // CHE COS'E'
-        'lang-h-what': 'Che cos\'è Perio-GPT?',
-        'lang-p-what': 'Perio-GPT è un modello di intelligenza artificiale specializzato in parodontologia, sviluppato attraverso un rigoroso processo di reinstructing e validazione clinica. Utilizza la tecnologia RAG (Retrieval-Augmented Generation) per fornire risposte basate su prove scientifiche.',
+        // === MODULO 1: RADIODIAGNOSTICA ===
+        'lang-module-1-title': 'Diagnosi Radiografica',
+        'lang-module-1-desc': 'Moduli di AI basati su CNN e Vision Transformers (ViT) addestrati su ortopantomografie etichettate da esperti parodontologi. Identifica automaticamente i segni radiografici della parodontite e stima lo stadio della malattia secondo criteri clinici validati. Strumento di screening automatizzato per assistere il clinico nella valutazione iniziale.',
+        'lang-module-1-benefit-1': 'Screening automatico parodontite',
+        'lang-module-1-benefit-2': 'Valutazione stadio malattia',
+        'lang-module-1-benefit-3': 'Riduzione variabilità diagnostica',
+
+        // === MODULO 2: DETTATURA AUTOMATICA ===
+        'lang-module-2-title': 'Dettatura Automatica Cartella',
+        'lang-module-2-desc': 'Sistema avanzato di riconoscimento vocale e comprensione semantica del linguaggio clinico. Il professionista detta i parametri parodontali (profondità di sondaggio, sanguinamento, mobilità, recessioni gengivali) e ottiene in tempo reale una scheda digitale completa e standardizzata, eliminando errori di trascrizione.',
+        'lang-module-2-benefit-1': 'Compilazione vocale in tempo reale',
+        'lang-module-2-benefit-2': 'Eliminazione errori trascrizione',
+        'lang-module-2-benefit-3': 'Tracciabilità ottimale dati clinici',
+
+        // === MODULO 3: CHATBOT SCIENTIFICO ===
+        'lang-module-3-title': 'Chatbot Clinico-Scientifico',
+        'lang-module-3-desc': 'LLM GPT-4o addestrato con metodologia RAG (Retrieval-Augmented Generation) su 85.000 pagine di letteratura scientifica in parodontologia e implantologia. Fornisce risposte evidence-based aggiornate alla letteratura più recente. Validato scientificamente nel Journal of Clinical Periodontology (2025).',
+        'lang-module-3-benefit-1': 'Risposte evidence-based',
+        'lang-module-3-benefit-2': 'Supporto decisionale clinico',
+        'lang-module-3-benefit-3': 'Formazione continua integrata',
+
+        // === INTEGRAZIONE ===
+        'lang-integration-title': 'Moduli Aggiuntivi e Estensioni Future',
+        'lang-integration-desc': 'Oltre ai tre moduli principali, PerioGPT integra modelli di radiodiagnostica AI validati per diagnosi precoce di osteoporosi, screening peri-implantite e valutazione perdita ossea marginale precoce. Questi moduli trasformano ogni studio in un centro digitale completo per lo screening di patologie orali e sistemiche, mantenendo sempre la responsabilità diagnostica in capo al clinico.',
+
+        // === FONDAMENTI TECNOLOGICI ===
+        'lang-h-tech': 'Fondamenti Tecnologici',
+        'lang-tech-1': 'Architettura Cloud',
+        'lang-tech-1-desc': 'Framework modulare basata su PyTorch, TensorFlow e FastAPI con pipeline proprietaria per scalabilità e sicurezza.',
+        'lang-tech-2': 'Interoperabilità',
+        'lang-tech-2-desc': 'Integrazione perfetta con software gestionali odontoiatrici già in uso, mantenendo forte differenziazione tecnologica.',
+        'lang-tech-3': 'Conformità Normativa',
+        'lang-tech-3-desc': 'SaMD (Software as Medical Device) conforme a MDR 2017/745 e AI Act europeo, con marcatura CE programmata.',
+
         'lang-feature-ai': 'IA Specializzata',
         'lang-feature-ai-desc': 'Modello GPT-4o addestrato specificamente per parodontologia con accesso a linee guida e letteratura scientifica aggiornata.',
         'lang-feature-specialized': 'Evidence-Based',
@@ -61,7 +93,7 @@ const translations = {
         'lang-h-research': 'Ricerca e Pubblicazioni',
         'lang-p-research': 'La nostra ricerca è pubblicata sulle principali riviste internazionali di parodontologia e medical imaging, consolidando la base scientifica del nostro approccio.',
         'lang-btn-read': 'Leggi Paper',
- 
+
         // BACKGROUND SCIENTIFICO
         'lang-h-background': 'Background Scientifico',
         'lang-p-background': 'La nostra tecnologia si basa su tecniche avanzate di intelligenza artificiale e metodologie evidence-based consolidate.',
@@ -112,8 +144,40 @@ const translations = {
         'lang-hero-cta': 'Learn More',
 
         // WHAT IS IT
-        'lang-h-what': 'What is Perio-GPT?',
-        'lang-p-what': 'Perio-GPT is an artificial intelligence model specialized in periodontology, developed through a rigorous process of reinstructing and clinical validation. It uses RAG (Retrieval-Augmented Generation) technology to provide evidence-based responses.',
+        // === MODULE 1: RADIODIAGNOSTICS ===
+        'lang-module-1-title': 'AI Radiodiagnostics',
+        'lang-module-1-desc': 'AI modules based on CNN and Vision Transformers (ViT) trained on panoramic radiographs labeled by expert periodontologists. Automatically identifies radiographic signs of periodontitis and estimates disease stage according to validated clinical criteria. Automated screening tool to assist clinicians in initial patient assessment.',
+        'lang-module-1-benefit-1': 'Automated periodontitis screening',
+        'lang-module-1-benefit-2': 'Disease stage assessment',
+        'lang-module-1-benefit-3': 'Reduced diagnostic variability',
+
+        // === MODULE 2: AUTOMATED DICTATION ===
+        'lang-module-2-title': 'Automated Dictation System',
+        'lang-module-2-desc': 'Advanced voice recognition system with semantic understanding of clinical language. The professional dictates periodontal parameters (probing depth, bleeding, mobility, gingival recession) and instantly receives a complete, standardized digital record, eliminating transcription errors.',
+        'lang-module-2-benefit-1': 'Real-time voice completion',
+        'lang-module-2-benefit-2': 'Elimination of transcription errors',
+        'lang-module-2-benefit-3': 'Optimal clinical data traceability',
+
+        // === MODULE 3: SCIENTIFIC CHATBOT ===
+        'lang-module-3-title': 'Clinical-Scientific Chatbot',
+        'lang-module-3-desc': 'GPT-4o LLM trained with RAG (Retrieval-Augmented Generation) methodology on 85,000 pages of scientific literature in periodontology and implantology. Provides evidence-based answers updated to the most recent literature. Scientifically validated in Journal of Clinical Periodontology (2025).',
+        'lang-module-3-benefit-1': 'Evidence-based answers',
+        'lang-module-3-benefit-2': 'Clinical decision support',
+        'lang-module-3-benefit-3': 'Integrated continuous education',
+
+        // === INTEGRATION ===
+        'lang-integration-title': 'Additional Modules and Future Extensions',
+        'lang-integration-desc': 'Beyond the three main modules, PerioGPT integrates validated AI radiodiagnostic models for early osteoporosis diagnosis, peri-implantitis screening and early marginal bone loss assessment. These modules transform every dental office into a complete digital screening center for oral and systemic pathologies, while maintaining diagnostic responsibility with the clinician.',
+
+        // === TECHNOLOGICAL FOUNDATIONS ===
+        'lang-h-tech': 'Technological Foundations',
+        'lang-tech-1': 'Cloud Architecture',
+        'lang-tech-1-desc': 'Modular framework based on PyTorch, TensorFlow and FastAPI with proprietary pipeline for scalability and security.',
+        'lang-tech-2': 'Interoperability',
+        'lang-tech-2-desc': 'Perfect integration with dental management software already in use, maintaining strong technological differentiation.',
+        'lang-tech-3': 'Regulatory Compliance',
+        'lang-tech-3-desc': 'SaMD (Software as Medical Device) compliant with MDR 2017/745 and European AI Act, with CE marking planned.',
+
         'lang-feature-ai': 'Specialized AI',
         'lang-feature-ai-desc': 'GPT-4o model trained specifically for periodontology with access to updated guidelines and scientific literature.',
         'lang-feature-specialized': 'Evidence-Based',
