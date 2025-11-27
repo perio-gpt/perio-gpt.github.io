@@ -252,6 +252,17 @@
         .card-body {
             padding: 25px;
         }
+
+        /* Team photos (uniform size) */
+        .team-photo {
+            width: 72px;
+            height: 72px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid rgba(0,102,204,0.12);
+            background-color: #fff;
+        }
         
         .card-title {
             color: #0066cc;
@@ -624,9 +635,11 @@
                     <div class="card-wrapper">
                         <div class="card card-bg card-big no-after">
                             <div class="card-body text-center">
-                                <div style="font-size: 3rem; color: #0066cc; margin-bottom: 15px;"><i class="fas fa-microscope"></i></div>
-                                <h5 class="card-title">Prof. Giuseppe Troiano</h5>
-                                <p class="card-text" style="color: #666; font-size: 0.9rem;"><strong>AI & Precision Dentistry</strong><br><small>Università LUM</small><br><em style="font-size: 0.85rem;">Advisor Internazionali</em></p>
+                                        <div>
+                                            <img src="./misc/troiano.png" alt="Prof. Giuseppe Troiano" class="team-photo">
+                                        </div>
+                                        <h5 class="card-title">Prof. Giuseppe Troiano</h5>
+                                        <p class="card-text" style="color: #666; font-size: 0.9rem;"><strong>AI & Precision Dentistry</strong><br><small>Università LUM</small><br><em style="font-size: 0.85rem;">Advisor Internazionali</em></p>
                             </div>
                         </div>
                     </div>
@@ -635,7 +648,9 @@
                     <div class="card-wrapper">
                         <div class="card card-bg card-big no-after">
                             <div class="card-body text-center">
-                                <div style="font-size: 3rem; color: #0066cc; margin-bottom: 15px;"><i class="fas fa-user-md"></i></div>
+                                <div>
+                                    <img src="./misc/fanelli.png" alt="Dott. Francesco Fanelli" class="team-photo">
+                                </div>
                                 <h5 class="card-title">Dott. Francesco Fanelli</h5>
                                 <p class="card-text" style="color: #666; font-size: 0.9rem;"><strong>AI & Data Science</strong><br><small>Università di Foggia</small></p>
                             </div>
@@ -646,7 +661,9 @@
                     <div class="card-wrapper">
                         <div class="card card-bg card-big no-after">
                             <div class="card-body text-center">
-                                <div style="font-size: 3rem; color: #0066cc; margin-bottom: 15px;"><i class="fas fa-code"></i></div>
+                                <div>
+                                    <img src="./misc/loseto.png" alt="Prof. Giuseppe Loseto" class="team-photo">
+                                </div>
                                 <h5 class="card-title">Prof. Giuseppe Loseto</h5>
                                 <p class="card-text" style="color: #666; font-size: 0.9rem;"><strong>Sviluppo Software & Cloud Engineering</strong><br><small>Università LUM</small></p>
                             </div>
@@ -657,7 +674,9 @@
                     <div class="card-wrapper">
                         <div class="card card-bg card-big no-after">
                             <div class="card-body text-center">
-                                <div style="font-size: 3rem; color: #0066cc; margin-bottom: 15px;"><i class="fas fa-chart-line"></i></div>
+                                <div>
+                                    <img src="./misc/secundo.png" alt="Prof.ssa Giustina Secundo" class="team-photo">
+                                </div>
                                 <h5 class="card-title">Prof.ssa Giustina Secundo</h5>
                                 <p class="card-text" style="color: #666; font-size: 0.9rem;"><strong>Management Engineering & Innovation</strong><br><small>Università LUM</small></p>
                             </div>
