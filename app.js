@@ -83,7 +83,7 @@ const translations = {
         'lang-event-startcup': 'Start Cup Puglia',
         'lang-event-startcup-desc': 'Partecipazione al principale concorso di imprenditorialità universitaria italiana. Un riconoscimento dell\'eccellenza dell\'innovazione tecnologica applicata alla medicina.',
         'lang-event-ranking': 'Posizionamento Top',
-        'lang-event-pni': 'Primo Numero Impresa',
+        'lang-event-pni': 'Premio Nazionale per l\'team-photoInnovazione',
         'lang-event-pni-desc': 'Selezione per il programma di incubazione nazionale. Supporto per lo sviluppo imprenditoriale e la commercializzazione della tecnologia.',
         'lang-event-selection': 'Progetto Selezionato',
 
@@ -177,15 +177,6 @@ const translations = {
         'lang-integration-title': 'Additional Modules and Future Extensions',
         'lang-integration-desc': 'Beyond the three main modules, PerioGPT integrates validated AI radiodiagnostic models for <b>early osteoporosis diagnosis</b>, <b>peri-implantitis screening</b> and <b>early marginal bone loss assessment</b>. These modules transform every dental office into a complete digital screening center for oral and systemic pathologies, while maintaining diagnostic responsibility with the clinician.',
 
-        // === TECHNOLOGICAL FOUNDATIONS ===
-        'lang-h-tech': 'Technological Foundations',
-        'lang-tech-1': '<i class="fas fa-network-wired" style="color: #0066cc; margin-right: 8px;"></i> Cloud Architecture',
-        'lang-tech-1-desc': 'Modular framework based on PyTorch, TensorFlow and FastAPI with proprietary pipeline for scalability and security.',
-        'lang-tech-2': '<i class="fas fa-lock" style="color: #0066cc; margin-right: 8px;"></i> Interoperability',
-        'lang-tech-2-desc': 'Perfect integration with dental management software already in use, maintaining strong technological differentiation.',
-        'lang-tech-3': '<i class="fas fa-certificate" style="color: #0066cc; margin-right: 8px;"></i> Regulatory Compliance',
-        'lang-tech-3-desc': 'SaMD (Software as Medical Device) compliant with MDR 2017/745 and European AI Act, with CE marking planned.',
-
         'lang-feature-ai': 'Specialized AI',
         'lang-feature-ai-desc': 'GPT-4o model trained specifically for periodontology with access to updated guidelines and scientific literature.',
         'lang-feature-specialized': 'Evidence-Based',
@@ -210,7 +201,7 @@ const translations = {
         'lang-event-startcup': 'Start Cup Puglia',
         'lang-event-startcup-desc': 'Participation in the main Italian university entrepreneurship competition. Recognition of excellence in technological innovation applied to medicine.',
         'lang-event-ranking': 'Top Ranking',
-        'lang-event-pni': 'Primo Numero Impresa',
+        'lang-event-pni': 'Premio Nazionale per l\'Innovazione',
         'lang-event-pni-desc': 'Selection for the national incubation program. Support for entrepreneurial development and technology commercialization.',
         'lang-event-selection': 'Selected Project',
 
