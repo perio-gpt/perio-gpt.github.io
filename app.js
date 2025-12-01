@@ -83,7 +83,7 @@ const translations = {
         'lang-event-startcup': 'Start Cup Puglia',
         'lang-event-startcup-desc': 'Partecipazione al principale concorso di imprenditorialità universitaria italiana. Un riconoscimento dell\'eccellenza dell\'innovazione tecnologica applicata alla medicina.',
         'lang-event-ranking': 'Posizionamento Top',
-        'lang-event-pni': 'Premio Nazionale per l\'team-photoInnovazione',
+        'lang-event-pni': 'Premio Nazionale per l\'Innovazione',
         'lang-event-pni-desc': 'Selezione per il programma di incubazione nazionale. Supporto per lo sviluppo imprenditoriale e la commercializzazione della tecnologia.',
         'lang-event-selection': 'Progetto Selezionato',
 
